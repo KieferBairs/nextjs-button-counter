@@ -1,6 +1,5 @@
 // Set Up component to run in browser
 'use client';
-import { unique } from "next/dist/build/utils";
 import { useId, useState } from "react";
 
 // Define props for component
@@ -49,4 +48,8 @@ return (
     <button onClick={() => setCount((c) => c + step)}>+{step}</button>
 
  {/* Reset */}
-</div>
+    <button onClick={() => setCount(0)}>Reset</button>
+ </div>
+ </section>
+);
+}
