@@ -11,7 +11,7 @@ type CounterProps = {
 // Main counter component
 export default function Counter({ initialCount = 0, intitialStep = 1 }: CounterProps) {
     const [count, setCount] = useState<number>(initialCount);
-    const [step, setStep] = useState<number>(Math,max(1, intitialStep);
+    const [step, setStep] = useState<number>(Math.max(1, intitialStep));
 
 // useId created a unique ID label for accessibility
 const stepId = useId();
