@@ -37,3 +37,16 @@ return (
 <p aria-live="polite" aria-atomic="true">
     count: <strong>{count}</strong>
 </p>
+
+{/* Button Controls */}
+
+{/* Decrement */}
+<div>
+    <button onClick={() => canDecrement && setCount((c) => c - step)} disabled={!canDecrement}>
+        -{step}
+    </button>
+ {/* Increment */}
+    <button onClick={() => setCount((c) => c + step)}>+{step}</button>
+
+ {/* Reset */}
+</div>
